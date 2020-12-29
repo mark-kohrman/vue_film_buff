@@ -1,10 +1,10 @@
 <template>
   <div class="movies-show">
+    <img v-bind:src="movie.img_url">
     <h1>{{ movie.title}}</h1>
     <h2> Director: {{ movie.director}}</h2>
     <h2> Year: {{ movie.release_year }}</h2>
     <p>{{ movie.description }}</p>
-    <img v-bind:src="movie.img_url">
 
 
 
@@ -25,7 +25,7 @@ export default {
     };
   },
   created: function () {
-    axios.get("/api/movies/1").then((response) => {
+    axios.get("/api/movies/6").then((response) => {
       console.log("show me the movies", response);
       this.movie = response.data;
     });

@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import ShowMovies from '../views/ShowMovies.vue'
+import IndexSearches from '../views/IndexSearches.vue'
 
 
 Vue.use(VueRouter)
@@ -16,6 +17,11 @@ const routes = [
     path: '/movies/:id',
     name: 'ShowMovies',
     component: ShowMovies
+  },
+  {
+    path: '/searches',
+    name: 'IndexSearches',
+    component: IndexSearches
   },
   {
     path: '/about',
