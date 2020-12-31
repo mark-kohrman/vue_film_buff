@@ -11,6 +11,7 @@
       <img v-bind:src="movie.img_url">
       <h1> {{ movie.title }} </h1>
       <h3> Released ({{ movie.release_year }})</h3>
+      <router-link v-bind:to="`/movies/${movie.id}`">More details</router-link>
       <p> __________________________________________________ </p>
       
     </div>
