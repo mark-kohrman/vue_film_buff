@@ -25,19 +25,21 @@ export default {
   data: function () {
     return {
       message: "This is the show page!!!",
-      movie: {},
-      thumbsUp: [],
-      thumbsDown: [],
+      movie: [],
+      upVote: [],
+      downVote: [],
     };
   },
   created: function () {
-    console.log(this.$route);
-    axios.get("/api/movies/" + this.$route.params.id).then((response) => {
-      console.log("show me the movies", response);
-      console.log(this.$route);
-      this.movie = response.data;
-    });
+    this.movieSearch();
   },
-  methods: {},
+  methods: {
+    movieSearch: function () {
+      axios.get("/api/searches/" + this.$route.params.id).then((response) => {
+        console.log("movie data from searches please!!");
+        this.movie = response.data;
+      });
+    },
+  },
 };
 </script>
