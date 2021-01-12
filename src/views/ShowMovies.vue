@@ -6,8 +6,11 @@
     <h2> Released ({{ movie.release_year }})</h2>
     <h3>  {{ movie.runtime }} runtime</h3>
     <p> Plot: {{ movie.description }}</p>
-    <h2><button v-on:click="thumbsUp()">Thumbs Up:</button> {{ movie.thumbs_up }}</h2>
-    <h2><button v-on:click="thumbsDown()">Thumbs Down:</button> {{ movie.thumbs_down }}</h2>
+    <!-- <h2><button v-on:click="thumbsUp()"><img src="../assets/thumbs_up.jpg" /> {{ movie.thumbs_up }}</button></h2>
+    <h2><button v-on:click="thumbsDown()"><img src="../assets/thumbs_down.png" /> {{ movie.thumbs_down }}</button></h2> -->
+
+     <h2><button v-on:click="thumbsUp()"> Thumbs Up: {{ movie.thumbs_up }}</button></h2>
+    <h2><button v-on:click="thumbsDown()">Thumbs Down: {{ movie.thumbs_down }}</button></h2>
 
 
 
@@ -43,6 +46,7 @@ export default {
     },
     thumbsUp: function () {
       this.upVote = this.movie.thumbs_up + 1;
+      console.log("thumbs up!!!");
       axios.patch("/api/movies/" + this.$route.params.id + "?thumb=up").then((response) => {
         this.movie.thumbs_up = response.data["thumbs_up"];
       });

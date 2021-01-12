@@ -1,11 +1,10 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/movies">All Movies </router-link> |
-      <router-link to="/about">About</router-link> | 
-      <router-link to="/movies/:id">Show Page Movies</router-link> |
-      <router-link to="/searches">Search Movies</router-link>
+      <router-link to="/movies">Liked Movies </router-link> |
+      <router-link to="/searches">Search Movies</router-link> | 
+      <router-link to="/about">About</router-link> 
+
 
 
     </div>
