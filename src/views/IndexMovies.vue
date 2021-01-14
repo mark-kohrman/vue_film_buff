@@ -18,23 +18,20 @@
     </div>
   </section>
   <h1 style="color:white"> Rated Movies </h1>
-  <div v-for="movie in movies">
-    <img v-bind:src="movie.img_url">
-    <h1 style="color:white">{{ movie.title}}</h1>
-    <h2 style="color:white"> Directed by {{ movie.director}}</h2>
-    <h2 style="color:white"> Released ({{ movie.release_year }})</h2>
-    <h3 style="color:white">  {{ movie.runtime }} runtime</h3>
-    <p style="color:white"> Plot: {{ movie.description }} </p>
-    <h3 style="color:white"> Thumbs Up: {{ movie.thumbs_up }} </h3>
-    <h3 style="color:white"> Thumbs Down: {{ movie.thumbs_down }} </h3>
-    <p style="color:white"> ________________________________ </p>
-    <br>
 
-  </div>
-
-
-
-
+    <div v-for="movie in movies">
+      <img v-bind:src="movie.img_url">
+      <h1 style="color:white">{{ movie.title}}</h1>
+      <h2 style="color:white"> Directed by {{ movie.director}}</h2>
+      <h2 style="color:white"> Released ({{ movie.release_year }})</h2>
+      <h3 style="color:white">  {{ movie.runtime }} runtime</h3>
+      <p style="color:white"> Plot: {{ movie.description }} </p>
+      <h3 style="color:white"> Thumbs Up: {{ movie.thumbs_up }} </h3>
+      <h3 style="color:white"> Thumbs Down: {{ movie.thumbs_down }} </h3>
+      <p style="color:white"> ________________________________ </p>
+      <br>
+    </div>
+    
   </div>
 </template>
 
