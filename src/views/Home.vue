@@ -1,24 +1,24 @@
 <template>
   <div class="movies-index">
-    <section class="page-section clearfix">
-      <div class="container">
-        <div class="intro">
-          <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="img/godfather.jpg" alt="">
-          <div class="intro-text left-0 text-center bg-faded p-5 rounded">
-            <h2 class="section-heading mb-4">
-              <span class="section-heading-lower">Check out liked and disliked movies</span>
-            </h2>
-            <p class="mb-3">Head over to the search page to give a thumbs up (or down) to your favorite (or least favorite) movies!
-            </p>
-            <div class="intro-button mx-auto">
-              <a class="btn btn-primary btn-xl" href="/searches">Search To Like Movies!</a>
-            </div>
+  <section class="page-section clearfix">
+    <div class="container">
+      <div class="intro">
+        <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="img/godfather.jpg" alt="">
+        <div class="intro-text left-0 text-center bg-faded p-5 rounded">
+          <h2 class="section-heading mb-4">
+            <span class="section-heading-lower">Welcome to Film Buff!</span>
+          </h2>
+          <p class="mb-3">Head over to the search page to rate your favorites or check out what's been rated below!
+          </p>
+          <div class="intro-button mx-auto">
+            <a class="btn btn-primary btn-xl" href="/searches">Search To Like Movies!</a>
           </div>
         </div>
       </div>
-    </section>
-    <h1 style="color:white"> Rated Movies </h1>
-    <br>
+    </div>
+  </section>
+  <h1 style="color:white"> Rated Movies </h1>
+
     <div v-for="movie in movies">
       <img v-bind:src="movie.img_url">
       <h1 style="color:white">{{ movie.title}}</h1>
@@ -30,12 +30,8 @@
       <h3 style="color:white"> Thumbs Down: {{ movie.thumbs_down }} </h3>
       <p style="color:white"> ________________________________ </p>
       <br>
-
     </div>
-
-
-
-
+    
   </div>
 </template>
 
@@ -48,7 +44,6 @@ import axios from "axios";
 export default {
   data: function () {
     return {
-      message: "This is the show page!!!",
       movies: {},
     };
   },
