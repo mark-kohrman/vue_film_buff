@@ -2,7 +2,7 @@
   <div id="app">
     <h1 class="site-heading text-center text-white d-none d-lg-block">
     <span class="site-heading-upper text-primary mb-3">A movie search app</span>
-    <span class="site-heading-lower">Film Buff</span>
+    <span class="site-heading-lower"><b>Film Buff</b></span>
   </h1>
 
   <!-- Navigation -->
@@ -34,7 +34,7 @@
 
   <footer class="footer text-faded text-center py-5">
     <div class="container">
-      <p class="m-0 small">Copyright &copy; Your Website 2020</p>
+      <p class="m-0 small">Copyright &copy; Film Buff 2021, An App By Mark Kohrman</p>
     </div>
   </footer>
   </div>

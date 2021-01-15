@@ -6,7 +6,7 @@
         <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="img/godfather.jpg" alt="">
         <div class="intro-text left-0 text-center bg-faded p-5 rounded">
           <h2 class="section-heading mb-4">
-            <span class="section-heading-lower">Welcome to Film Buff!</span>
+            <span class="section-heading-lower"><b>Welcome to Film Buff!</b></span>
           </h2>
           <p class="mb-3">Head over to the search page to rate your favorites or check out what's been rated below!
           </p>
