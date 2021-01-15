@@ -14,13 +14,13 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav mx-auto">
            <li class="nav-item px-lg-4">
-            <a class="nav-link text-uppercase text-expanded" href="/movies">Liked Movies</a>
+            <router-link class="nav-link text-uppercase text-expanded" to="/movies">Liked Movies</router-link>
           </li>
           <li class="nav-item px-lg-4">
-            <a class="nav-link text-uppercase text-expanded" href="/searches">Search</a>
+            <router-link class="nav-link text-uppercase text-expanded" to="/searches">Search</router-link>
           </li>
           <li class="nav-item px-lg-4">
-            <a class="nav-link text-uppercase text-expanded" href="/about">About</a>
+            <router-link class="nav-link text-uppercase text-expanded" to="/about">About</router-link>
           </li>
         </ul>
       </div>

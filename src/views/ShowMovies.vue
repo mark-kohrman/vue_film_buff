@@ -1,5 +1,5 @@
 <template>
-  <div class="movies-show">
+  <div v-if="movie" class="movies-show">
     <img v-bind:src="movie.img_url">
     <h1 style="color:white">{{ movie.title}}</h1>
     <h2 style="color:white"> Directed by {{ movie.director}}</h2>
@@ -35,7 +35,7 @@ export default {
   data: function () {
     return {
       message: "This is the show page!!!",
-      movie: [],
+      movie: null,
       upVote: [],
       downVote: [],
     };
