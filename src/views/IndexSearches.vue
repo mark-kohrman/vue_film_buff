@@ -47,7 +47,7 @@ import axios from "axios";
 export default {
   data: function () {
     return {
-      message: "Enter the movie to search!",
+      message: "Enter the movie to search and rate!",
       movies: [],
       movieTitle: "",
     };

@@ -1,8 +1,8 @@
 <template>
   <div id="app">
     <h1 class="site-heading text-center text-white d-none d-lg-block">
-    <span class="site-heading-upper text-primary mb-3">A movie search app</span>
-    <span class="site-heading-lower"><b>Film Buff</b></span>
+    <span class="site-heading-upper text-primary mb-3">The ONLY movie rating app</span>
+    <span class="site-heading-lower"><b>Rotten Peters</b></span>
   </h1>
 
   <!-- Navigation -->
@@ -14,7 +14,7 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav mx-auto">
            <li class="nav-item px-lg-4">
-            <router-link class="nav-link text-uppercase text-expanded" to="/movies">Liked Movies</router-link>
+            <router-link class="nav-link text-uppercase text-expanded" to="/movies">Rated Movies</router-link>
           </li>
           <li class="nav-item px-lg-4">
             <router-link class="nav-link text-uppercase text-expanded" to="/searches">Search</router-link>
@@ -34,7 +34,7 @@
 
   <footer class="footer text-faded text-center py-5">
     <div class="container">
-      <p class="m-0 small">Copyright &copy; Film Buff 2021, An App By Mark Kohrman</p>
+      <p class="m-0 small">Copyright &copy; Rotten Peters 2023, An App By Mark Kohrman</p>
     </div>
   </footer>
   </div>
