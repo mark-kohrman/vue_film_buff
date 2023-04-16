@@ -4,6 +4,10 @@ import Home from '../views/Home.vue'
 import IndexMovies from '../views/IndexMovies.vue'
 import ShowMovies from '../views/ShowMovies.vue'
 import IndexSearches from '../views/IndexSearches.vue'
+import Signup from "../views/Signup.vue";
+import Login from "../views/Login.vue";
+import Logout from "../views/Logout.vue";
+
 
 
 Vue.use(VueRouter)
@@ -39,7 +43,21 @@ const routes = [
     name: 'Home',
     component: Home
   },
-
+  { 
+    path: "/signup", 
+    name: "signup", 
+    component: Signup 
+  },
+  { 
+    path: "/login", 
+    name: "login", 
+    component: Login 
+  },
+  { 
+    path: "/logout", 
+    name: "logout", 
+    component: Logout 
+  }
 ]
 
 const router = new VueRouter({

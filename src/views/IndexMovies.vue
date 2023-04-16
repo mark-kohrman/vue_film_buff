@@ -19,22 +19,50 @@
       </div>
     </section>
     <h1 style="color: white">Rated Movies</h1>
-
-    <div v-for="movie in movies">
-      <img v-bind:src="movie.img_url" />
-      <h1 style="color: white">{{ movie.title }}</h1>
-      <h2 style="color: white">Directed by {{ movie.director }}</h2>
-      <h2 style="color: white">Released ({{ movie.release_year }})</h2>
-      <h3 style="color: white">{{ movie.runtime }} runtime</h3>
-      <p style="color: white">Plot: {{ movie.description }}</p>
-      <h3 style="color: white">Rating: {{ movie.rating }}</h3>
-      <p style="color: white">________________________________</p>
-      <br />
+    <table class="movie-table">
+      <tr>
+        <th>Movie (Year)</th>
+        <th>Directed By</th>
+        <th>Runtime</th>
+      </tr>
+      <div class="ratings-heading" v-for="movie in movies">
+        <tr>
+          <td >{{ movie.title }} ({{ movie.release_year }})</td>
+          <td>{{  movie.director }} </td>
+          <td>{{  movie.runtime }} </td>
+        </tr>
     </div>
+    </table>
   </div>
 </template>
 
-<style></style>
+<style>
+table, th, td {
+  border: 1px solid white;
+
+}
+  .movie-heading {
+    /* display: table-header-group; */
+    color: white;
+  }
+
+  tr {
+    width: 100%;
+  }
+
+  .ratings-heading {
+    display: table-row-group;
+    color: white;
+  }
+
+
+  .movie-table {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    color: white;
+  }
+</style>
 
 <script>
 import axios from "axios";

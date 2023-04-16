@@ -22,6 +22,15 @@
           <li class="nav-item px-lg-4">
             <router-link class="nav-link text-uppercase text-expanded" to="/about">About</router-link>
           </li>
+          <li class="nav-item px-lg-4">
+            <router-link class="nav-link text-uppercase text-expanded" to="/signup">Sign Up</router-link>
+          </li>
+          <li class="nav-item px-lg-4">
+            <router-link class="nav-link text-uppercase text-expanded" to="/login">Login</router-link>
+          </li>
+          <li class="nav-item px-lg-4">
+            <router-link class="nav-link text-uppercase text-expanded" to="/logout">Logout</router-link>
+          </li>
         </ul>
       </div>
     </div>
